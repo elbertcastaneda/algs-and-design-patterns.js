@@ -1,16 +1,26 @@
 const reverse = require('./src/reverse');
 const bubbleSort = require('./src/bubbleSort');
 const bubbleSortDesc = require('./src/bubbleSortDesc');
+const selectionSort = require('./src/selectionSort');
+const selectionSortDesc = require('./src/selectionSortDesc');
 const bracketsMatcher = require('./src/bracketsMatcher');
 const isPrime = require('./src/isPrime');
 const sqrt = require('./src/sqrt');
 
-// const arr = [3,15,8,6, 99, 2, 1, 77];
+const arrBub = [3,15,8,6, 99, 2, 1, 77];
 // const arr = [3,8, 77, 2, 99];
-const arr = ['ab', 'abc', 'cba', 'aa'];
+// const arr = ['ab', 'abc', 'cba', 'aa'];
+
+console.log(arrBub);
+bubbleSort(arrBub);
+console.log(arrBub);
+
+const arr = [1000,3, 15, 8, 6, 99, 2, 1, 77, -1];
+// const arr = [3, 8, 77, 2, 99];
+// const arr = ['ab', 'abc', 'cba', 'aa'];
 
 console.log(arr);
-bubbleSortDesc(arr);
+selectionSort(arr);
 console.log(arr);
 
 
