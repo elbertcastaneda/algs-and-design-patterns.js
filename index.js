@@ -3,6 +3,8 @@ const bubbleSort = require('./src/bubbleSort');
 const bubbleSortDesc = require('./src/bubbleSortDesc');
 const selectionSort = require('./src/selectionSort');
 const selectionSortDesc = require('./src/selectionSortDesc');
+const insertionSort = require('./src/insertionSort');
+const insertionSortDesc = require('./src/insertionSortDesc');
 const bracketsMatcher = require('./src/bracketsMatcher');
 const isPrime = require('./src/isPrime');
 const sqrt = require('./src/sqrt');
@@ -11,16 +13,24 @@ const arrBub = [3,15,8,6, 99, 2, 1, 77];
 // const arr = [3,8, 77, 2, 99];
 // const arr = ['ab', 'abc', 'cba', 'aa'];
 
-console.log(arrBub);
-bubbleSort(arrBub);
-console.log(arrBub);
+// console.log(arrBub);
+// bubbleSort(arrBub);
+// console.log(arrBub);
 
-const arr = [1000,3, 15, 8, 6, 99, 2, 1, 77, -1];
+const arrSel = [1000,3, 15, 8, 6, 99, 2, 1, 77, -1];
+// const arrSel = [3, 8, 77, 2, 99];
+// const arrSel = ['ab', 'abc', 'cba', 'aa'];
+
+// console.log(arrSel);
+// selectionSort(arrSel);
+// console.log(arrSel);
+
+const arr = [1000,3, 15, 8, 6, 99, -88, 2, 1, 77, -1];
 // const arr = [3, 8, 77, 2, 99];
 // const arr = ['ab', 'abc', 'cba', 'aa'];
 
 console.log(arr);
-selectionSort(arr);
+insertionSortDesc(arr);
 console.log(arr);
 
 
