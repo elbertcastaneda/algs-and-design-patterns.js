@@ -8,6 +8,7 @@ const insertionSortDesc = require('./src/insertionSortDesc');
 const bracketsMatcher = require('./src/bracketsMatcher');
 const isPrime = require('./src/isPrime');
 const sqrt = require('./src/sqrt');
+const findIslands = require('./src/findIslands');
 
 const LinkedList = require('./src/LinkedList');
 
@@ -88,3 +89,23 @@ console.log('---------- LinkedList merge ----------');
 LinkedList.merge(list1, list2).print();
 
 list1.mergeWith(list2).print();
+
+
+console.log('---------- findIslands ----------');
+
+const matrix = [
+  [1, 1, 1, 0, 1, 1, 1],
+  [1, 1, 1, 0, 1, 1, 1],
+  [1, 1, 1, 0, 1, 1, 1],
+  [0, 0, 0, 1, 0, 0, 0],
+  [1, 1, 1, 0, 1, 1, 1],
+  [1, 1, 1, 0, 1, 1, 1],
+  [1, 1, 1, 0, 1, 1, 1],
+]
+
+console.table(matrix);
+
+const islands = findIslands(matrix);
+
+console.log(islands);
+console.log('count islands: ', islands.length);
