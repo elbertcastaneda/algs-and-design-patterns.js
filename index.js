@@ -39,8 +39,10 @@ insertionSort(arr);
 console.log(arr);
 
 
-// console.log(reverse([1,2,3,4,5,6,7,8,9]));
-// console.log(reverse(['a', 'b', 'c', 'd', 'e', 'f']));
+console.log(' ----- reverse ----');
+
+console.log(reverse([1,2,3,4,5,6,7,8,9]));
+console.log(reverse(['a', 'b', 'c', 'd', 'e', 'f']));
 
 // console.log('----');
 
