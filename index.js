@@ -86,6 +86,20 @@ list2.add(14);
 
 list2.print();
 
+console.log('---------- LinkedList insertAtHead ----------');
+
+const listInsertAtHead = new LinkedList();
+
+listInsertAtHead.insertAtHead(5);
+listInsertAtHead.insertAtHead(10);
+listInsertAtHead.insertAtHead(2);
+listInsertAtHead.insertAtHead(12);
+listInsertAtHead.insertAtHead(19);
+listInsertAtHead.insertAtHead(20);
+
+listInsertAtHead.print();
+
+
 console.log('---------- LinkedList merge ----------');
 
 LinkedList.merge(list1, list2).print();

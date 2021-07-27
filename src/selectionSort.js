@@ -1,6 +1,4 @@
 const selectionSort = source => {
-  // we use: (source.length - 1) because the last iteration is not necessary because
-  // one iteration before the last one we will have the array sorted
   for (let i = 0; i < source.length - 1; i++) {
     // console.log('i:', i);
     let minIndex = i;

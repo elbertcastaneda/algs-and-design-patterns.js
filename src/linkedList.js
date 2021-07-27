@@ -13,6 +13,15 @@ class LinkedList {
     this.size = 0;
   }
 
+  insertAtHead(value) {
+    const newNode = new Node(value);
+
+    newNode.nextNode = this.head;
+
+    this.head = newNode;
+    this.size++;
+  }
+
   add(value) {
     const node = new Node(value);
 
