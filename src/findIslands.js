@@ -30,6 +30,7 @@ const findIslands = (matrix) => {
 
     return data[i][j];
   };
+
   /**
    *
    * @param {function(0|1, Number, Number)} callback
@@ -44,6 +45,7 @@ const findIslands = (matrix) => {
    * @param {Number} i
    * @param {Number} j
    * @param {{ i: Number, j: Number}} steps
+   * @returns boolean
    */
   const canGo = (i, j, { i: iSteps = 0, j: jSteps = 0 }) => {
     const place = get(i + iSteps, j + jSteps);
