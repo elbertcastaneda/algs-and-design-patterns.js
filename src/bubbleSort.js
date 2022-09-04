@@ -12,7 +12,7 @@ const bubbleSort = source => {
         flag = true;
       }
 
-      // console.log('source[j] > source[j + 1]', source[j], source[j + 1]);
+      // console.log('source: ', source);
     }
 
     if (!flag) {

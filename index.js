@@ -16,9 +16,9 @@ const arrBub = [3,15,8,6, 99, 2, 1, 77];
 // const arr = [3,8, 77, 2, 99];
 // const arr = ['ab', 'abc', 'cba', 'aa'];
 
-// console.log(arrBub);
-// bubbleSort(arrBub);
-// console.log(arrBub);
+console.log(arrBub);
+bubbleSortDesc(arrBub);
+console.log(arrBub);
 
 const arrSel = [1000,3, 15, 8, 6, 99, 2, 1, 77, -1];
 // const arrSel = [3, 8, 77, 2, 99];
@@ -113,7 +113,7 @@ const matrix = [
   [1, 1, 1, 0, 1, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],
-  [0, 0, 0, 1, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0],
   [1, 1, 1, 0, 1, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],
@@ -123,5 +123,4 @@ console.table(matrix);
 
 const islands = findIslands(matrix);
 
-console.log(islands);
-console.log('count islands: ', islands.length);
+console.log('count islands: ', islands);
