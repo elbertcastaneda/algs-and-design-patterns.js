@@ -1,4 +1,4 @@
-const isPrime = value => {
+function isPrime(value: number): boolean {
   if (value < 2) {
     return false;
   }
@@ -10,6 +10,6 @@ const isPrime = value => {
   }
 
   return true;
-};
+}
 
-module.exports = isPrime;
+export default isPrime;

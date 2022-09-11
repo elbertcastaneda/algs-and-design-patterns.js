@@ -1,4 +1,4 @@
-import pivotIndex from "./pivotIndex";
+import pivotIndex from 'letCode/pivotIndex';
 
 test('Example 1', () => {
   const result = pivotIndex([1,7,3,6,5,6]);
@@ -19,7 +19,7 @@ test('Example 3', () => {
 });
 
 test('Example 4', () => {
-  const result = pivotIndex([33,27,10,10,33,10,10,10,10,10,10,10,5,5]);
+  const result = pivotIndex([33,27,10,10,5,5,33,10,10,10,10,10,10,10,5,5,10]);
 
-  expect(result).toBe(4);
+  expect(result).toBe(6);
 });

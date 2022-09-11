@@ -1,4 +1,4 @@
-import runningSum from "./runningSum";
+import runningSum from "letCode/runningSum";
 
 test('Example 1', () => {
   const result = runningSum([1,2,3,4]);

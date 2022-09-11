@@ -10,6 +10,7 @@ export default {
   transform: {
     '^.+\\.ts?$': 'ts-jest',
   },
+  modulePaths: ['node_modules', '<rootDir>/src'],
   transformIgnorePatterns: ['<rootDir>/node_modules/'],
 
   // Indicates whether the coverage information should be collected while executing the test
