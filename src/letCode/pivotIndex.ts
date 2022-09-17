@@ -1,13 +1,13 @@
-function pivotIndex(nums: number[]): number {
-  const sum = nums.reduce((acc, n) => acc + n, 0);
+function pivotIndex(numbers: number[]): number {
+  const sum = numbers.reduce((acc, n) => acc + n, 0);
   let leftSum = 0;
 
-  for (let i = 0; i < nums.length; i++) {
-    if (leftSum === sum - leftSum - nums[i]) {
+  for (let i = 0; i < numbers.length; i++) {
+    if (leftSum === sum - leftSum - numbers[i]) {
       return i;
     }
 
-    leftSum += nums[i];
+    leftSum += numbers[i];
   }
 
   return -1;

@@ -1,17 +1,16 @@
-const insertionSort = source => {
+const insertionSort = (source: number[]): void => {
   for (let i = 0; i < source.length; i++) {
     const current = source[i];
-    let j = i - 1;
 
-    while (j >= 0 && source[j] > current) {
+    let j;
+    for (j = i - 1; (j >= 0) && (source[j] > current); j--) {
       source[j + 1] = source[j];
-      j = j - 1;
     }
     source[j + 1] = current;
   }
 };
 
-module.exports = insertionSort;
+export default insertionSort;
 
 // source = 2,8,4,7,9,5
 
