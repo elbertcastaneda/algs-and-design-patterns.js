@@ -32,7 +32,10 @@ describe('isSubsequence: ', () => {
   });
 
   it('Example 6 => "aabcde" is a subsequence of "jsjskjwkwjwahabgcdaaaedfsfjksdfsdkhfdsjkfdshfsdfhsdfsdkh"', () => {
-    const result = isSubsequence('aabcde', 'jsjskjwkwjwahabgcdaaaedfsfjksdfsdkhfdsjkfdshfsdfhsdfsdkh');
+    const result = isSubsequence(
+      'aabcde',
+      'jsjskjwkwjwahabgcdaaaedfsfjksdfsdkhfdsjkfdshfsdfhsdfsdkh',
+    );
 
     expect(result).toBeTruthy();
   });
@@ -76,7 +79,10 @@ describe('isSubsequenceWithIndexOf: ', () => {
   });
 
   it('Example 6 => "aabcde" is a subsequence of "jsjskjwkwjwahabgcdaaaedfsfjksdfsdkhfdsjkfdshfsdfhsdfsdkh"', () => {
-    const result = isSubsequenceWithIndexOf('aabcde', 'jsjskjwkwjwahabgcdaaaedfsfjksdfsdkhfdsjkfdshfsdfhsdfsdkh');
+    const result = isSubsequenceWithIndexOf(
+      'aabcde',
+      'jsjskjwkwjwahabgcdaaaedfsfjksdfsdkhfdsjkfdshfsdfhsdfsdkh',
+    );
 
     expect(result).toBeTruthy();
   });
@@ -86,7 +92,6 @@ describe('isSubsequenceWithIndexOf: ', () => {
 
     expect(result).toBeTruthy();
   });
-
 });
 
 describe('Perfomance isSubsequence vs isSubsequenceWithIndexOf: ', () => {
@@ -105,4 +110,4 @@ describe('Perfomance isSubsequence vs isSubsequenceWithIndexOf: ', () => {
     expect(resultIsSubsequenceWithIndexOf).toBeTruthy();
     expect(timeUsedIsSubsequenceWithIndexOf).toBeGreaterThan(timeUsedIsSubsequence);
   });
-})
+});

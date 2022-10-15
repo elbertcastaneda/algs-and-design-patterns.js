@@ -1,13 +1,16 @@
 // Running Sum of 1d Array
+function runningSum(numbers: number[]): number[] {
+  const values: number[] = [];
 
-function runningSum(nums: number[]): number[] {
-  return nums.reduce((acc, num) => {
+  return numbers.reduce(
+    (acc, num) => {
       acc.sum += num;
       acc.values.push(acc.sum);
 
       return acc;
-  }, { sum: 0, values: [] as number[] }).values;
+    },
+    { sum: 0, values },
+  ).values;
 }
 
 export default runningSum;
-

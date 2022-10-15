@@ -30,7 +30,7 @@ class LinkedList {
     } else {
       let current = this.head;
 
-      while(current.nextNode) {
+      while (current.nextNode) {
         current = current.nextNode;
       }
 
@@ -48,16 +48,16 @@ class LinkedList {
     }
 
     callback(current.value);
-    while(current.nextNode) {
+    while (current.nextNode) {
       current = current.nextNode;
       callback(current.value);
     }
   }
 
   print() {
-    this.forEach((value) => {
+    this.forEach(value => {
       console.log(value);
-    })
+    });
   }
 
   /**

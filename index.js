@@ -4,7 +4,7 @@ const findIslands = require('./src/algorithms/exercises/find-islands');
 
 const LinkedList = require('./src/algorithms/data-structures/linked-list');
 
-const arrBub = [3,15,8,6, 99, 2, 1, 77];
+const arrBub = [3, 15, 8, 6, 99, 2, 1, 77];
 // const arr = [3,8, 77, 2, 99];
 // const arr = ['ab', 'abc', 'cba', 'aa'];
 
@@ -12,7 +12,7 @@ console.log(arrBub);
 bubbleSortDesc(arrBub);
 console.log(arrBub);
 
-const arrSel = [1000,3, 15, 8, 6, 99, 2, 1, 77, -1];
+const arrSel = [1000, 3, 15, 8, 6, 99, 2, 1, 77, -1];
 // const arrSel = [3, 8, 77, 2, 99];
 // const arrSel = ['ab', 'abc', 'cba', 'aa'];
 
@@ -20,12 +20,10 @@ const arrSel = [1000,3, 15, 8, 6, 99, 2, 1, 77, -1];
 // selectionSort(arrSel);
 // console.log(arrSel);
 
-
 console.log(' ----- reverse ----');
 
-console.log(reverse([1,2,3,4,5,6,7,8,9]));
+console.log(reverse([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 console.log(reverse(['a', 'b', 'c', 'd', 'e', 'f']));
-
 
 console.log('---------- LinkedList ----------');
 
@@ -57,13 +55,11 @@ listInsertAtHead.insertAtHead(20);
 
 listInsertAtHead.print();
 
-
 console.log('---------- LinkedList merge ----------');
 
 LinkedList.merge(list1, list2).print();
 
 list1.mergeWith(list2).print();
-
 
 console.log('---------- findIslands ----------');
 
@@ -75,7 +71,7 @@ const matrix = [
   [1, 1, 1, 0, 0, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],
-]
+];
 
 console.table(matrix);
 

@@ -1,6 +1,6 @@
 const bracketsMatcher = template => {
   const openings = { '{': '}', '[': ']', '(': ')' };
-  const closings = new Set([ '}' , ']', ')' ]);
+  const closings = new Set(['}', ']', ')']);
 
   const brackets = [];
 
@@ -19,7 +19,7 @@ const bracketsMatcher = template => {
       const lastBracket = brackets.pop();
 
       if (lastBracket !== character) {
-        return false
+        return false;
       }
     }
   }

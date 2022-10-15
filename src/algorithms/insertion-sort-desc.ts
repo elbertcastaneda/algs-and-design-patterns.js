@@ -3,7 +3,7 @@ const insertionSortDesc = (source: number[]): void => {
     const current = source[i];
 
     let j;
-    for (j = i - 1; (j >= 0) && (source[j] < current); j--) {
+    for (j = i - 1; j >= 0 && source[j] < current; j--) {
       source[j + 1] = source[j];
     }
     source[j + 1] = current;

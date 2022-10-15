@@ -20,4 +20,4 @@ function minPathSum(grid: number[][]): number {
   }
 
   return grid[rows][cols];
-};
+}

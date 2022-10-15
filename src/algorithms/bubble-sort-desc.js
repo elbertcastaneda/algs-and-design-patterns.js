@@ -2,7 +2,7 @@ const bubbleSortDesc = source => {
   for (let i = 0; i < source.length - 1; i++) {
     let flag = false;
     for (let j = 0; j < source.length - 1 - i; j++) {
-    // console.log('source[j] > source[j + 1]', source[j], source[j + 1]);
+      // console.log('source[j] > source[j + 1]', source[j], source[j + 1]);
 
       if (source[j] < source[j + 1]) {
         const tmp = source[j + 1];

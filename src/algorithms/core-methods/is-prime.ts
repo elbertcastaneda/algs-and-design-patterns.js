@@ -3,9 +3,9 @@ function isPrime(value: number): boolean {
     return false;
   }
 
-  for (let i = 2; i*i <= value; i++) {
+  for (let i = 2; i * i <= value; i++) {
     if (value % i === 0) {
-      return false
+      return false;
     }
   }
 

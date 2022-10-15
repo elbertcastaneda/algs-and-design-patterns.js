@@ -3,7 +3,7 @@ const insertionSort = (source: number[]): void => {
     const current = source[i];
 
     let j;
-    for (j = i - 1; (j >= 0) && (source[j] > current); j--) {
+    for (j = i - 1; j >= 0 && source[j] > current; j--) {
       source[j + 1] = source[j];
     }
     source[j + 1] = current;
@@ -56,7 +56,6 @@ export default insertionSort;
 // exit while because j is greater or equals then zero but source[3] (8) is not greater then current (9)
 // source [4] = 9
 // source = 2,4,7,8,9,5
-
 
 // i = 5
 // current = 5
