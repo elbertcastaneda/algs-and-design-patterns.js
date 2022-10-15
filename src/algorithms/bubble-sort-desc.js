@@ -22,4 +22,4 @@ const bubbleSortDesc = source => {
   }
 };
 
-module.exports = bubbleSortDesc;
+export default bubbleSortDesc;

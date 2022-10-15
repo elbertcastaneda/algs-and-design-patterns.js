@@ -19,7 +19,7 @@
     "noEmit": true,
     "allowJs": true
   },
-  "include": ["src/", "./.eslintrc.js", "./jest.config.ts"],
+  "include": ["src/", "./.eslintrc.js", "./jest.config.ts", "./index.js"],
   "exclude": ["node_modules"],
   "ts-node": {
     "require": ["tsconfig-paths/register"]

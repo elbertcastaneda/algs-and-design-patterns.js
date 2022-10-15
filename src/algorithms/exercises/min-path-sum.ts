@@ -1,4 +1,4 @@
-function minPathSum(grid: number[][]): number {
+export default function minPathSum(grid: number[][]): number {
   const rows = grid.length - 1;
   const cols = grid[0].length - 1;
 

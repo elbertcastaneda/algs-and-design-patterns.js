@@ -2,6 +2,7 @@
   "name": "algs-and-design-patterns.js",
   "version": "1.0.0",
   "description": "Project to practicing and exercising algorithms and design patterns javascript/typescript",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jest",

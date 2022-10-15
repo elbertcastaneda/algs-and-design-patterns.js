@@ -11,4 +11,4 @@ const reverse = source => {
   return source;
 };
 
-module.exports = reverse;
+export default reverse;

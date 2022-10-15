@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class LinkedList {
+export default class LinkedList {
   constructor() {
     /** @type Node */
     this.head = null;
@@ -104,5 +104,3 @@ class LinkedList {
     return mergedList;
   }
 }
-
-module.exports = LinkedList;

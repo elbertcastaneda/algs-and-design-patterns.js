@@ -1,8 +1,7 @@
-const reverse = require('./src/algorithms/reverse');
-const bubbleSortDesc = require('./src/algorithms/bubble-sort-desc');
-const findIslands = require('./src/algorithms/exercises/find-islands');
-
-const LinkedList = require('./src/algorithms/data-structures/linked-list');
+import bubbleSortDesc from './src/algorithms/bubble-sort-desc.js';
+import LinkedList from './src/algorithms/data-structures/linked-list.js';
+import findIslands from './src/algorithms/exercises/find-islands.js';
+import reverse from './src/algorithms/reverse.js';
 
 const arrBub = [3, 15, 8, 6, 99, 2, 1, 77];
 // const arr = [3,8, 77, 2, 99];
@@ -12,7 +11,7 @@ console.log(arrBub);
 bubbleSortDesc(arrBub);
 console.log(arrBub);
 
-const arrSel = [1000, 3, 15, 8, 6, 99, 2, 1, 77, -1];
+// const arrSel = [1000, 3, 15, 8, 6, 99, 2, 1, 77, -1];
 // const arrSel = [3, 8, 77, 2, 99];
 // const arrSel = ['ab', 'abc', 'cba', 'aa'];
 

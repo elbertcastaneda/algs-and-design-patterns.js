@@ -35,7 +35,11 @@ const findIslands = matrix => {
    * @param {function(0|1, Number, Number)} callback
    */
   const iterate = callback =>
-    matrix.forEach((row, i) => row.forEach((cellValue, j) => callback(cellValue, i, j)));
+    matrix.forEach((row, i) => {
+      row.forEach((cellValue, j) => {
+        callback(cellValue, i, j);
+      });
+    });
 
   /**
    *
@@ -102,4 +106,4 @@ const findIslands = matrix => {
   return foundIslands;
 };
 
-module.exports = findIslands;
+export default findIslands;

@@ -104,7 +104,7 @@ describe('Perfomance isSubsequence vs isSubsequenceWithIndexOf: ', () => {
 
     const startIsSubsequenceWithIndexOf = performance.now();
     const resultIsSubsequenceWithIndexOf = isSubsequenceWithIndexOf(s, t);
-    const timeUsedIsSubsequenceWithIndexOf = performance.now() - startIsSubsequence;
+    const timeUsedIsSubsequenceWithIndexOf = performance.now() - startIsSubsequenceWithIndexOf;
 
     expect(resultIsSubsequence).toBeTruthy();
     expect(resultIsSubsequenceWithIndexOf).toBeTruthy();
