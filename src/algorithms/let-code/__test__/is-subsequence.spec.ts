@@ -1,4 +1,4 @@
-import isSubsequence, { isSubsequenceWithIndexOf } from 'let-code/is-subsequence';
+import isSubsequence, { isSubsequenceWithIndexOf } from 'algorithms/let-code/is-subsequence';
 
 describe('isSubsequence: ', () => {
   it('Example 1 => "abc" is a subsequence of "ahbgdc"', () => {

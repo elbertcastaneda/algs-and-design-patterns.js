@@ -1,4 +1,4 @@
-import runningSum from "let-code/running-sum";
+import runningSum from "algorithms/let-code/running-sum";
 
 describe('runningSum: ', () => {
     it('Example 1', () => {

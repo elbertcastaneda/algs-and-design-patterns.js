@@ -1,12 +1,12 @@
 {
-  "name": "algorithms",
+  "name": "algs-and-design-patterns.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project to practicing and exercising algorithms and design patterns javascript/typescript",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "Elbert Castaneda<elbert.castaneda@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "29.1.2",

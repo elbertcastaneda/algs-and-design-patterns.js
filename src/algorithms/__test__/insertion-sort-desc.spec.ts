@@ -1,4 +1,4 @@
-import insertionSortDesc from 'insertion-sort-desc';
+import insertionSortDesc from 'algorithms/insertion-sort-desc';
 
 describe('insertionSortDesc: ', () => {
   it('input [1000,3, 15, 8, 6, 99, -88, 2, 1, 77, -1] => [1000, 99, 77, 15, 8, 6, 3, 2, 1, -1, -88]', () => {

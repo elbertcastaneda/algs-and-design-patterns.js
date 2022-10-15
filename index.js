@@ -1,8 +1,8 @@
-const reverse = require('./src/reverse');
-const bubbleSortDesc = require('./src/bubble-sort-desc');
-const findIslands = require('./src/find-islands');
+const reverse = require('./src/algorithms/reverse');
+const bubbleSortDesc = require('./src/algorithms/bubble-sort-desc');
+const findIslands = require('./src/algorithms/exercises/find-islands');
 
-const LinkedList = require('./src/linked-list');
+const LinkedList = require('./src/algorithms/data-structures/linked-list');
 
 const arrBub = [3,15,8,6, 99, 2, 1, 77];
 // const arr = [3,8, 77, 2, 99];
