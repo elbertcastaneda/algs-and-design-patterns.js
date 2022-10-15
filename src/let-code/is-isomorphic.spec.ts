@@ -1,4 +1,4 @@
-import isIsomorphic from 'letCode/isIsomorphic';
+import isIsomorphic from 'let-code/is-isomorphic';
 
 describe('isIsomorphic: ', () => {
   it('Example 1 => "egg" are "add" are isomorphic', () => {

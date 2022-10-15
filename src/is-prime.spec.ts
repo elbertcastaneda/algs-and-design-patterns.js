@@ -1,4 +1,4 @@
-import isPrime from "isPrime";
+import isPrime from 'is-prime';
 
 test('should return true when we use prime numbers (2, 3, 5, 7, 11, 13, 17, 19, 23)', () => {
   expect([2, 3, 5, 7, 11, 13, 17, 19, 23].every(n => isPrime(n))).toBeTruthy();

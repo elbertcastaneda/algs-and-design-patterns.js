@@ -1,4 +1,4 @@
-import pivotIndex from 'letCode/pivotIndex';
+import pivotIndex from 'let-code/pivot-index';
 
 describe('pivotIndex: ', () => {
     it('Example 1', () => {
