@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Project to practicing and exercising algorithms and design patterns javascript/typescript",
   "type": "module",
-  "main": "index.js",
+  "main": "lib/main.js",
   "scripts": {
+    "build": "tsc --project ./tsconfig.build.json && node ./scripts/build-main.js",
+    "start": "yarn build && node lib/main.js",
     "test": "jest",
     "lint": "eslint . --fix",
     "format": "prettier . --write",
@@ -17,6 +19,7 @@
     "@types/node": "18.11.0",
     "@typescript-eslint/eslint-plugin": "5.38.1",
     "@typescript-eslint/parser": "5.38.1",
+    "esbuild": "0.15.11",
     "eslint": "8.25.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-import-resolver-typescript": "3.5.1",
@@ -29,7 +32,6 @@
     "prettier": "2.7.1",
     "ts-jest": "29.0.3",
     "ts-node": "10.9.1",
-    "tsconfig-paths": "4.1.0",
     "typescript": "4.8.4"
   }
 }

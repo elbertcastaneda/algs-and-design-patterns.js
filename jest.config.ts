@@ -12,6 +12,7 @@ const config: Config = {
   transform: {
     '^.+\\.ts?$': 'ts-jest',
   },
+  testMatch: ['**/__test__/**/*.spec.ts'],
   modulePaths: ['node_modules', '<rootDir>/src'],
   transformIgnorePatterns: ['<rootDir>/node_modules/'],
 

@@ -94,7 +94,7 @@ describe('isSubsequenceWithIndexOf: ', () => {
   });
 });
 
-describe('Perfomance isSubsequence vs isSubsequenceWithIndexOf: ', () => {
+describe('Performance isSubsequence vs isSubsequenceWithIndexOf: ', () => {
   it('Example 1 => "aabcde" is a subsequence of "jsjskjwkwjwahabgcdaaaedfsfjksdfsdkhfdsjkfdshfsdfhsdfsdkh"', () => {
     const [s, t] = ['aabcde', 'jsjskjwkwjwahabgcdaaaedfsfjksdfsdkhfdsjkfdshfsdfhsdfsdkh'];
 
@@ -108,6 +108,6 @@ describe('Perfomance isSubsequence vs isSubsequenceWithIndexOf: ', () => {
 
     expect(resultIsSubsequence).toBeTruthy();
     expect(resultIsSubsequenceWithIndexOf).toBeTruthy();
-    expect(timeUsedIsSubsequenceWithIndexOf).toBeGreaterThan(timeUsedIsSubsequence);
+    expect(timeUsedIsSubsequenceWithIndexOf).toBeLessThan(timeUsedIsSubsequence);
   });
 });

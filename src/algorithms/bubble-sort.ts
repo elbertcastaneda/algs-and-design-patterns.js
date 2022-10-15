@@ -1,4 +1,4 @@
-const bubbleSort = source => {
+const bubbleSort = (source: number[]) => {
   for (let i = 0; i < source.length - 1; i++) {
     let flag = false;
 
@@ -23,4 +23,4 @@ const bubbleSort = source => {
   }
 };
 
-module.exports = bubbleSort;
+export default bubbleSort;

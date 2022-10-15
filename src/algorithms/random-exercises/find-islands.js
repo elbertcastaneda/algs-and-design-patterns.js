@@ -9,8 +9,8 @@ const findIslands = matrix => {
 
   /**
    *
-   * @param {Number} i
-   * @param {Number} j
+   * @param {number} i
+   * @param {number} j
    * @returns {{ value: 0|1, visited: boolean }}
    */
   const get = (i, j) => {
@@ -32,7 +32,7 @@ const findIslands = matrix => {
 
   /**
    *
-   * @param {function(0|1, Number, Number)} callback
+   * @param {function(0|1, number, number)} callback
    */
   const iterate = callback =>
     matrix.forEach((row, i) => {
@@ -43,9 +43,9 @@ const findIslands = matrix => {
 
   /**
    *
-   * @param {Number} i
-   * @param {Number} j
-   * @param {{ i: Number, j: Number}} steps
+   * @param {number} i
+   * @param {number} j
+   * @param {{ i: number, j: number}} steps
    * @returns boolean
    */
   const canGo = (i, j, { i: iSteps = 0, j: jSteps = 0 }) => {
@@ -56,10 +56,10 @@ const findIslands = matrix => {
 
   /**
    *
-   * @param {Number} i
-   * @param {Number} j
+   * @param {number} i
+   * @param {number} j
    */
-  const findNeighbors = (i, j) => {
+  const exploreIsland = (i, j) => {
     const place = get(i, j);
 
     if (!place) {
@@ -71,25 +71,25 @@ const findIslands = matrix => {
     const canGoUp = canGo(i, j, { i: -1 });
 
     if (canGoUp) {
-      findNeighbors(i - 1, j);
+      exploreIsland(i - 1, j);
     }
 
     const canGoRight = canGo(i, j, { j: 1 });
 
     if (canGoRight) {
-      findNeighbors(i, j + 1);
+      exploreIsland(i, j + 1);
     }
 
     const canGoDown = canGo(i, j, { i: 1 });
 
     if (canGoDown) {
-      findNeighbors(i + 1, j);
+      exploreIsland(i + 1, j);
     }
 
     const canGoLeft = canGo(i, j, { j: -1 });
 
     if (canGoLeft) {
-      findNeighbors(i, j - 1);
+      exploreIsland(i, j - 1);
     }
   };
 
@@ -97,7 +97,7 @@ const findIslands = matrix => {
 
   iterate((value, i, j) => {
     if (value === 1 && !get(i, j).visited) {
-      findNeighbors(i, j);
+      exploreIsland(i, j);
 
       foundIslands++;
     }

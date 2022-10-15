@@ -35,9 +35,9 @@ module.exports = {
     'simple-import-sort/imports': 'error',
   },
   settings: {
-    'import/extensions': ['.js', '.ts', '.tsx'],
+    'import/extensions': ['.js', '.cjs', '.ts', '.tsx'],
     'import/parsers': {
-      '@typescript-eslint/parser': ['.js', '.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.js', '.cjs', '.ts', '.tsx'],
     },
   },
   overrides: [

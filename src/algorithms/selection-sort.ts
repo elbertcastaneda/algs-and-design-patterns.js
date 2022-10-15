@@ -1,4 +1,4 @@
-const selectionSort = source => {
+const selectionSort = (source: number[]) => {
   for (let i = 0; i < source.length - 1; i++) {
     // console.log('i:', i);
     let minIndex = i;
@@ -14,7 +14,7 @@ const selectionSort = source => {
     }
 
     // We save the value of the minimum index found into a temp var to perform the swap
-    tmp = source[minIndex];
+    const tmp = source[minIndex];
     // We swap the value of the current iteration to the minimum index found
     source[minIndex] = source[i];
     // We swap the value of the minimum index found to current iteration position
@@ -24,4 +24,4 @@ const selectionSort = source => {
   }
 };
 
-module.exports = selectionSort;
+export default selectionSort;

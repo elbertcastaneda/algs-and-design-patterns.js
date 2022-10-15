@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ES6",
+    "allowJs": true,
+    "noEmit": false,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src/"],
+  "exclude": [
+    "node_modules",
+    "**/__test__/*.ts",
+    ".eslintrc.cjs",
+    "./jest.config.ts",
+    "./index.js"
+  ]
+}

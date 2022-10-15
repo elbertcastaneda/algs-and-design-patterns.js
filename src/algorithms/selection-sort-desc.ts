@@ -1,4 +1,4 @@
-const selectionSort = source => {
+const selectionSort = (source: number[]) => {
   // we use: (source.length - 1) because the last iteration is not necessary because
   // one iteration before the last one we will have the array sorted
   for (let i = 0; i < source.length - 1; i++) {
@@ -16,7 +16,7 @@ const selectionSort = source => {
     }
 
     // We save the value of the maximum index found into a temp var to perform the swap
-    tmp = source[maxIndex];
+    const tmp = source[maxIndex];
     // We swap the value of the current iteration to the maximum index found
     source[maxIndex] = source[i];
     // We swap the value of the maximum index found to current iteration position
@@ -26,4 +26,4 @@ const selectionSort = source => {
   }
 };
 
-module.exports = selectionSort;
+export default selectionSort;

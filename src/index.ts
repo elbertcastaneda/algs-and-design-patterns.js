@@ -1,7 +1,7 @@
-import bubbleSortDesc from './src/algorithms/bubble-sort-desc.js';
-import LinkedList from './src/algorithms/data-structures/linked-list.js';
-import findIslands from './src/algorithms/exercises/find-islands.js';
-import reverse from './src/algorithms/reverse.js';
+import bubbleSortDesc from 'algorithms/bubble-sort-desc';
+import LinkedList from 'algorithms/data-structures/linked-list.js';
+import findIslands from 'algorithms/random-exercises/find-islands.js';
+import reverse from 'algorithms/reverse';
 
 const arrBub = [3, 15, 8, 6, 99, 2, 1, 77];
 // const arr = [3,8, 77, 2, 99];
@@ -62,7 +62,7 @@ list1.mergeWith(list2).print();
 
 console.log('---------- findIslands ----------');
 
-const matrix = [
+const matrix: Array<Array<0 | 1>> = [
   [1, 1, 1, 0, 1, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],

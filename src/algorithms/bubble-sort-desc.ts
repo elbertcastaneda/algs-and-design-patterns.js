@@ -1,4 +1,4 @@
-const bubbleSortDesc = source => {
+const bubbleSortDesc = (source: number[]) => {
   for (let i = 0; i < source.length - 1; i++) {
     let flag = false;
     for (let j = 0; j < source.length - 1 - i; j++) {
