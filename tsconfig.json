@@ -1,17 +1,13 @@
 {
   "compilerOptions": {
-    /* Language and Environment */
     "target": "ES6",
+    "module": "CommonJS",
 
-    /* Modules */
-    "module": "ES6",
     "baseUrl": "./src",
 
-    /* Interop Constraints */
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
 
-    /* Type Checking */
     "strict": true,
     "skipLibCheck": true,
 
