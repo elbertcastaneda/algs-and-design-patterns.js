@@ -22,5 +22,6 @@ esbuild
     outfile: pkg.main,
     plugins: [baseUrlPlugin],
     tsconfig: tsconfig,
+    platform: 'node',
   })
   .catch(() => process.exit(1));
