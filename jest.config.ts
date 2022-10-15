@@ -1,9 +1,11 @@
+import type { Config } from 'jest';
+
 /*
  * For a detailed explanation regarding each configuration property and type check, visit:
  * https://jestjs.io/docs/configuration
  */
 
-export default {
+const config: Config = {
   clearMocks: true,
   preset: 'ts-jest',
   testEnvironment: 'node',
@@ -25,3 +27,5 @@ export default {
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: "v8",
 };
+
+export default config
