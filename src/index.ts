@@ -1,7 +1,8 @@
 import bubbleSortDesc from 'algorithms/bubble-sort-desc';
 import LinkedList from 'algorithms/data-structures/linked-list.js';
-import findIslands from 'algorithms/random-exercises/find-islands.js';
+import findIslands from 'algorithms/random-exercises/find-islands';
 import reverse from 'algorithms/reverse';
+import factoryMethodMain from 'design-patterns/factory-method/main';
 
 const arrBub = [3, 15, 8, 6, 99, 2, 1, 77];
 // const arr = [3,8, 77, 2, 99];
@@ -65,7 +66,7 @@ console.log('---------- findIslands ----------');
 const matrix: Array<Array<0 | 1>> = [
   [1, 1, 1, 0, 1, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],
-  [1, 1, 1, 0, 1, 1, 1],
+  [0, 1, 0, 0, 1, 1, 1],
   [0, 0, 0, 0, 0, 0, 0],
   [1, 1, 1, 0, 0, 1, 1],
   [1, 1, 1, 0, 1, 1, 1],
@@ -77,3 +78,11 @@ console.table(matrix);
 const islands = findIslands(matrix);
 
 console.log('count islands: ', islands);
+
+console.table(matrix);
+
+console.log('');
+console.log('---------- Factory Method ----------');
+console.log('');
+
+factoryMethodMain();

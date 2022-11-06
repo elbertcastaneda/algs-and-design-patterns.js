@@ -1,6 +1,6 @@
 import bracketsMatcher from 'algorithms/random-exercises/brackets-matcher';
 
-describe('bracketsMatcher', () => {
+describe('bracketsMatcher:', () => {
   it('should return true with "[()]{}{[()()]()}"', () => {
     expect(bracketsMatcher('[()]{}{[()()]()}')).toBeTruthy();
   });
