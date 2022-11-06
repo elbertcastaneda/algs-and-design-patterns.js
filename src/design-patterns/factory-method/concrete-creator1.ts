@@ -1,6 +1,6 @@
-import ConcreteProduct1 from './concrete-product1';
-import Creator from './creator';
-import Product from './types/product';
+import ConcreteProduct1 from 'design-patterns/factory-method/concrete-product1';
+import Creator from 'design-patterns/factory-method/creator';
+import Product from 'design-patterns/factory-method/types/product';
 
 /**
  * Concrete Creators override the factory method in order to change the

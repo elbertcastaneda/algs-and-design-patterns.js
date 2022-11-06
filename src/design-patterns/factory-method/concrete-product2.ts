@@ -1,4 +1,4 @@
-import Product from './types/product';
+import Product from 'design-patterns/factory-method/types/product';
 
 export default class ConcreteProduct2 implements Product {
   public operation(): string {

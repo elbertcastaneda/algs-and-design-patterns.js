@@ -1,4 +1,4 @@
-import Product from './types/product';
+import Product from 'design-patterns/factory-method/types/product';
 /**
  * Concrete Products provide various implementations of the Product interface.
  */

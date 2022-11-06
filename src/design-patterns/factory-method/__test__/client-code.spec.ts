@@ -1,6 +1,6 @@
-import clientCode from '../client-code';
-import ConcreteCreator1 from '../concrete-creator1';
-import ConcreteCreator2 from '../concrete-creator2';
+import clientCode from 'design-patterns/factory-method/client-code';
+import ConcreteCreator1 from 'design-patterns/factory-method/concrete-creator1';
+import ConcreteCreator2 from 'design-patterns/factory-method/concrete-creator2';
 
 describe('clientCode', () => {
   let mockLog: jest.SpyInstance<void, [message?: string, ...optionalParams: string[]]>;

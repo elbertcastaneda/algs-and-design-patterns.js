@@ -1,4 +1,4 @@
-import Creator from './creator';
+import Creator from 'design-patterns/factory-method/creator';
 
 function clientCode(creator: Creator) {
   // ...
