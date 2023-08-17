@@ -1,6 +1,7 @@
 import bubbleSortDesc from 'algorithms/bubble-sort-desc';
 import LinkedList from 'algorithms/data-structures/linked-list.js';
 import findIslands from 'algorithms/random-exercises/find-islands';
+import uniqueElements from 'algorithms/random-exercises/unique-elements';
 import reverse from 'algorithms/reverse';
 import factoryMethodMain from 'design-patterns/factory-method/main';
 
@@ -86,3 +87,13 @@ console.log('---------- Factory Method ----------');
 console.log('');
 
 factoryMethodMain();
+
+console.log('');
+console.log('---------- uniqueElements ----------');
+console.log('');
+
+// Test Data :
+console.log(uniqueElements([1, 2, 3], [100, 2, 1, 10]));
+// Expected Output [“1”, “2", “3”, “10", “100”]
+console.log(uniqueElements([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]));
+// Expected Output [“1", “2”, “3", “4”, “5", “6”]
